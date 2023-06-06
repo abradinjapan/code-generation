@@ -264,11 +264,11 @@ def generate():
     print("Generating code...\n")
 
     # setup variables
-    global_namespace = input("Please select a global namespace:")
-    function_name = input("Please choose your function's name:")
-    variables = get_list("variables")
-    inputs = get_list("inputs")
-    outputs = get_list("outputs")
+    global_namespace = input("Please select a global namespace: ")
+    function_name = input("Please choose your function's name: ")
+    variables = get_list("Variables")
+    inputs = get_list("Inputs")
+    outputs = get_list("Outputs")
 
     # call function
     code = generate_forge_c_function(global_namespace, function_name, variables, inputs, outputs)
