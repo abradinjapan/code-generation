@@ -195,7 +195,7 @@ def generate_forge_c_function(global_namespace, function_name, variables, inputs
         output += "\tANVIL__code__register_to_register(workspace, flag, " + generate_c_long_register(global_namespace, function_name, "output", output_iterator) + ", output__" + output_iterator + ");\n"
 
     # finish call
-    output += "}\n\n"
+    output += "\n\treturn;\n}\n\n"
 
     # generate function
     output += "// build function\n"
