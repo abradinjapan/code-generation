@@ -277,5 +277,3 @@ def generate():
     print(code)
 
     pass
-
-generate()
